@@ -1,0 +1,19 @@
+[package]
+name = "wasi-tests"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+wasi-tests-bins = { path = "crates/bins", artifact = "bin", target = "wasm32-wasi" }
+
+[dev-dependencies]
+wasi-tests-toml = { path = "crates/toml" }
+libtest-mimic = "0.6"
+wasmtime-wasi = "2.0"
+wasi-common = "2.0"
+wasmtime = "2.0"
+tempfile = "3.3.0"
+
+[[test]]
+name = "all"
+harness = false

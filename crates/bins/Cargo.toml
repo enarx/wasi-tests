@@ -1,0 +1,13 @@
+[package]
+name = "wasi-tests-bins"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasi = "*"
+
+[profile.release]
+codegen-units = 1
+opt-level = 3
+strip = true
+lto = true
