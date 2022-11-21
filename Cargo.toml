@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [build-dependencies]
-wasi-tests-bins = { path = "crates/bins", artifact = "bin", target = "wasm32-wasi" }
+wasi-tests-preview1 = { path = "crates/preview1", artifact = "bin", target = "wasm32-wasi" }
 
 [dev-dependencies]
 wasi-tests-toml = { path = "crates/toml" }
